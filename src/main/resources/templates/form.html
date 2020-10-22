@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spring Html Unit</title>
+        <meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<h4 data-th-text="'Hello to Thymeleaf '+${myParam}">Hello from Thymeleaf</h4>
+
+        <form name="test" data-th-action="@{/submit}" method="post">
+            <label for="subject">Subject:
+                <input type="text" id="subject" name="subject">
+            </label>
+            <label for="message">
+                <input type="text" name="message" id="message">
+            </label>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+		
+	</body>
+</html>
