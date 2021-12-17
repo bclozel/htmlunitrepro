@@ -89,7 +89,7 @@ public class WelcomeControllerTests {
 		webClient.waitForBackgroundJavaScript(10000);
 		HtmlElement span = page.getHtmlElementById("result");
 		assertNotNull(span);
-		assertEquals("subject test message test", span.asText());
+		assertEquals("subject test message test", span.asNormalizedText());
 	}
 
 
@@ -109,7 +109,7 @@ public class WelcomeControllerTests {
 		webClient.waitForBackgroundJavaScript(10000);
 		HtmlElement span = page.getHtmlElementById("result");
 		assertNotNull(span);
-		assertEquals("subject test message test", span.asText());
+		assertEquals("subject test message test", span.asNormalizedText());
 	}
 
 }
